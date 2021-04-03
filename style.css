@@ -1,0 +1,131 @@
+:root {
+    --text-color: rgb(230, 230, 230);
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background-color: #454545;
+}
+
+.container {
+    background-image: linear-gradient(
+        20deg,
+        rgb(60, 60, 60) 50%,
+        rgb(117 122 104) 100%
+    );
+    padding: 2em;
+    color: var(--text-color);
+}
+
+.albumart {
+    border-radius: 1em;
+    box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+}
+
+.title {
+    font-weight: 500;
+    margin-bottom: 0.1em;
+}
+
+.artist {
+    margin-bottom: 1em;
+    color: rgba(230, 230, 230, 0.7);
+}
+
+.playbar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+.playbar__playbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2em;
+}
+
+.playbar__circle {
+    background-color: rgb(230, 230, 230);
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    margin-right: auto;
+    position: absolute;
+}
+
+.playbar__bar {
+    background-color: rgba(230, 230, 230, 0.5);
+    width: 100%;
+    height: 0.15rem;
+    border-radius: 1rem;
+}
+
+.playbar__text {
+    color: rgba(230, 230, 230, 0.5);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.controllers .fa-backward {
+    font-size: 1.5rem;
+}
+
+.controllers .fa-forward {
+    font-size: 1.5rem;
+}
+
+.soundController {
+    display: flex;
+}
+
+.soundController__bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.sC__bar__bar {
+    width: 100%;
+    height: 0.15rem;
+    background-image: linear-gradient(
+        to right,
+        rgba(230, 230, 230, 0.9) 5rem,
+        rgba(230, 230, 230, 0.5) 5rem
+    );
+    border-radius: 1rem;
+}
+
+.sC__bar__circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+    margin-left: 5rem;
+    position: absolute;
+}
